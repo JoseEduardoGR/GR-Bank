@@ -1,0 +1,28 @@
+name: "✨ Solicitud de Funcionalidad"
+description: "Propón una característica nueva o mejora."
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Describe tu idea"
+      description: "Explica qué te gustaría agregar o mejorar."
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: "Por qué sería útil"
+      description: "Explica por qué esta mejora es necesaria."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Información adicional"
+      description: "Opcional: capturas, referencias, ejemplos."
+    validations:
+      required: false

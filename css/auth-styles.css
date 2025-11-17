@@ -1,0 +1,217 @@
+/* Estilos para el dropdown de usuario */
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-menu-btn {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.user-menu-btn:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.user-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--white);
+  min-width: 200px;
+  box-shadow: var(--shadow-lg);
+  border-radius: 10px;
+  z-index: 1001;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+
+.user-dropdown:hover .user-dropdown-content {
+  display: block;
+  animation: fadeInDown 0.3s ease;
+}
+
+.user-dropdown-content a {
+  color: var(--text-dark);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.user-dropdown-content a:hover {
+  background-color: var(--bg-light);
+  color: var(--primary-color);
+}
+
+/* Estilos para mensajes toast */
+.message-toast {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 2000;
+  min-width: 300px;
+  animation: slideInRight 0.3s ease;
+  border-left: 4px solid var(--primary-color);
+}
+
+.message-toast.success {
+  border-left-color: var(--accent-color);
+  background: #f0fdf4;
+}
+
+.message-toast.success i {
+  color: var(--accent-color);
+}
+
+.message-toast.error {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+}
+
+.message-toast.error i {
+  color: #ef4444;
+}
+
+.message-toast.info {
+  border-left-color: var(--primary-color);
+  background: #eff6ff;
+}
+
+.message-toast.info i {
+  color: var(--primary-color);
+}
+
+.message-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-light);
+  margin-left: auto;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.message-close:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--text-dark);
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Estilos para formularios con validación */
+.form-group.error input {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.form-group.success input {
+  border-color: var(--accent-color);
+  background-color: #f0fdf4;
+}
+
+.form-error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.form-group.error .form-error {
+  display: block;
+}
+
+/* Loading states */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.loading {
+  position: relative;
+  color: transparent;
+}
+
+button.loading::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive para elementos de autenticación */
+@media (max-width: 768px) {
+  .user-dropdown-content {
+    right: -20px;
+    min-width: 180px;
+  }
+
+  .message-toast {
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+  }
+
+  .user-menu-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}

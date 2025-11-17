@@ -1,0 +1,51 @@
+name: "🐞 Reporte de Bug"
+description: "Reporta un problema para ayudarnos a mejorar la extensión."
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: "Versión de la extensión"
+      placeholder: "Ejemplo: v1.0.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descripción del problema"
+      description: "Explica qué ocurre y qué esperabas que pasara."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Pasos para reproducir"
+      placeholder: |
+        1. 
+        2. 
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs o evidencia"
+      description: "Agrega capturas o errores si aplica."
+      placeholder: "Contenido opcional"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Sistema operativo"
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true

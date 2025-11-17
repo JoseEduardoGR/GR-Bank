@@ -1,0 +1,52 @@
+[06-Jul-2025 19:11:42 America/Mexico_City] Connection error: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+[06-Jul-2025 19:11:42 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:101
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\login.php(30): User->login('a@a.com', '1')
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 101
+[06-Jul-2025 19:12:30 America/Mexico_City] Connection error: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+[06-Jul-2025 19:16:52 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "DB_PORT" in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:19
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\login.php(27): User->__construct()
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 19
+[06-Jul-2025 19:17:03 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "DB_PORT" in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:19
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\login.php(27): User->__construct()
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 19
+[06-Jul-2025 19:27:50 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "DB_PORT" in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:19
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\login.php(27): User->__construct()
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 19
+[06-Jul-2025 19:32:38 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "DB_PORT" in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:19
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\login.php(27): User->__construct()
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 19
+[10-Jul-2025 08:58:38 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "DB_PORT" in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:19
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\register.php(30): User->__construct()
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 19
+[10-Jul-2025 10:34:37 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "DB_PORT" in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:19
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\login.php(27): User->__construct()
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 19
+[10-Jul-2025 10:35:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "DB_PORT" in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:19
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\register.php(30): User->__construct()
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 19
+[10-Jul-2025 10:35:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "DB_PORT" in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:19
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\register.php(30): User->__construct()
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 19
+[10-Jul-2025 10:35:42 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "DB_PORT" in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php:19
+Stack trace:
+#0 C:\Program Files (x86)\VertrigoServ\www\GR_BANK\api\login.php(27): User->__construct()
+#1 {main}
+  thrown in C:\Program Files (x86)\VertrigoServ\www\GR_BANK\classes\User.php on line 19

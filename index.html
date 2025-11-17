@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR Bank - Tu banco de confianza</title>
+    <link rel="stylesheet" href="css/styles.css?v=1">
+    <link rel="icon" type="image/png" href="assets/isotipo light.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/auth-styles.css?v=1">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.png" alt="Ícono" width="100" height="50">
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Productos</a>
+                        <div class="dropdown">
+                            <a href="#">Cuentas</a>
+                            <a href="#">Tarjetas</a>
+                            <a href="#">Préstamos</a>
+                            <a href="#">Inversiones</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                        <div class="dropdown">
+                            <a href="#">Banca Digital</a>
+                            <a href="#">Transferencias</a>
+                            <a href="#">Pagos</a>
+                            <a href="#">Seguros</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Empresas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Ayuda</a>
+                    </li>
+                </ul>
+
+                <div class="nav-buttons">
+                    <button class="btn-login" onclick="openModal('login')">
+                        <i class="fas fa-user"></i>
+                        Iniciar Sesión
+                    </button>
+                    <button class="btn-register" onclick="openModal('register')">
+                        Registrarse
+                    </button>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Tu futuro financiero
+                    <span class="highlight">comienza aquí</span>
+                </h1>
+                <p class="hero-description">
+                    Descubre una nueva forma de hacer banca. Con GR Bank, gestiona tus finanzas de manera simple, segura y desde cualquier lugar.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openModal('register')">
+                        Abrir cuenta
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Ver demo
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="card-mockup">
+                    <div class="card">
+                        <div class="card-chip"></div>
+                        <div class="card-number">**** **** **** 1234</div>
+                        <div class="card-name">GR CODE</div>
+                        <div class="card-logo">GR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Banca Móvil</h3>
+                    <p>Gestiona tus cuentas desde tu smartphone con nuestra app segura y fácil de usar.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Tarjetas</h3>
+                    <p>Tarjetas de crédito y débito con los mejores beneficios y sin comisiones ocultas.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Inversiones</h3>
+                    <p>Haz crecer tu dinero con nuestros productos de inversión personalizados.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguridad</h3>
+                    <p>Protección avanzada con tecnología de última generación para tus transacciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500000">0</div>
+                    <div class="stat-label">Clientes satisfechos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Sucursales</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Años de experiencia</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">% Disponibilidad</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GR Bank</h3>
+                    <p>Tu banco de confianza. Comprometidos con tu futuro financiero.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Cuentas de ahorro</a></li>
+                        <li><a href="#">Cuentas corrientes</a></li>
+                        <li><a href="#">Tarjetas de crédito</a></li>
+                        <li><a href="#">Préstamos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Banca en línea</a></li>
+                        <li><a href="#">App móvil</a></li>
+                        <li><a href="#">Transferencias</a></li>
+                        <li><a href="#">Pagos de servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 52 554 404 0845</li>
+                        <li><i class="fas fa-envelope"></i> grbank@grbank.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad De Mexico</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GR Bank. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalLogin('login')">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Iniciar Sesión</button>
+                <p class="modal-link">¿No tienes cuenta? <a href="javascript:void(0)" onclick="openModal('register'); closeModalLogin()">Regístrate</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalRegister('register')">&times;</span>
+            <h2>Registrarse</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="fullName">Nombre completo</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Correo electrónico</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Contraseña</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Registrarse</button>
+                <p class="modal-link">¿Ya tienes cuenta? <a href="#" onclick="switchModal('register', 'login')">Inicia sesión</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js?v=3"></script>
+    <script src="js/auth.js?v=3"></script>
+</body>
+</html>
